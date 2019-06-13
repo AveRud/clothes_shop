@@ -296,7 +296,43 @@
         border-bottom: 1px solid #e5e5e5;
     }
 
-    /*thank you page end */
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        display: inherit;
+
+    }
+
+    .search_bar_mobile {
+        width: 76vw;
+    }
+
+    .header_list_mobile {
+        width: 133px;
+        left: 34vw;
+        margin-top: 15px;
+    }
+
+    .header_right_section_mobile {
+        left: -200px;
+        top: 0;
+    }
+
+    .header_search_section_mobile {
+        position: relative;
+        top: 58px;
+        left: 69px;
+        width: auto;
+    }
+
+    .header_logo_mobile {
+        margin: 0 0 0 22px;
+    }
+
+
+        /*thank you page end */
 }
 
 
@@ -304,7 +340,6 @@
 @media screen and (min-width: 768px) and (max-width: 1240px) {
 
     html {
-        /*display: unset;*/
         display: table-caption;
     }
 

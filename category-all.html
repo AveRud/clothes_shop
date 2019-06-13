@@ -20,20 +20,20 @@
             </a>
         </div>
         <nav>
-            <ul>
-                <li><a href="">Women</a></li>
-                <li><a href="">Man</a></li>
-                <li><a href="">Kids</a></li>
-                <li><a href="">Coming soon</a></li>
+            <ul id="header_list">
+                <li><a href="category-all.html">Women</a></li>
+                <li><a href="category-all.html">Man</a></li>
+                <li><a href="category-all.html">Kids</a></li>
+                <li><a href="category-all.html">Coming soon</a></li>
             </ul>
         </nav>
     </div>
     <div class="header_right_section">
         <div class="header_search_section">
-            <!--            <input type="text">-->
-            <img src="img/icons/header_search_icon.png" alt="">
+            <input type="text" id="search_bar" class="hidden"
+                   onfocus="if (this.value) this.value=''">
+            <img src="img/icons/header_search_icon.png" alt="search icon" id="search_icon" class="notActive">
         </div>
-
         <div class="header_basket_section">
             <a href="#"><img src="img/icons/header_basket_icon.png" alt="Basket icon"></a>
             <p>Backet</p>
@@ -180,5 +180,6 @@
     </div>
 </footer>
 
+<script src="js/common.js"></script>
 </body>
 </html>

@@ -46,6 +46,9 @@ header li {
     margin-right: 53px;
 }
 
+header li:hover {
+    text-decoration: underline;
+}
 .header_search_section {
     display: flex;
     margin-right: 38px;
@@ -56,9 +59,27 @@ header li {
     border: 1px solid grey;
 }
 
-/*.header_search_section input {*/
-/*    display: none;*/
-/*}*/
+.header_search_section input {
+    font-size: 12px;
+    font-style: italic;
+    color: #a3a3a3;
+    padding-left: 10px;
+    border: 1px solid #606060;
+    height: 36px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: inherit;
+}
+
+.active {
+    background-color: darkgrey;
+    filter: invert(1);
+}
 
 .header_basket_section {
     display: flex;
