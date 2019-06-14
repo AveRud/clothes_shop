@@ -55,7 +55,7 @@ header li:hover {
 }
 
 .header_search_section img {
-    padding: 10px;
+    padding: 10px 12px;
     border: 1px solid grey;
 }
 
@@ -105,8 +105,6 @@ header ul {
 
 main {
     font-family: 'Lato', sans-serif;
-    /*TODO доделать main padding*/
-    /*padding: 0 75px 62px 136px;  old */
     padding: 0 42px 62px 45px;
 }
 
@@ -549,3 +547,16 @@ body {
 main {
     flex: 1;
 }
+
+
+.main_slider img:first-child,
+.main_slider img:last-child {
+    background-color: grey;
+    width: 45px;
+}
+
+.main_slider img {
+width: 200px;
+height: 120px;
+}
+
