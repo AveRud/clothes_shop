@@ -7,6 +7,7 @@
 /*}*/
 
 /*---------- home page start  -----------*/
+
 html {
     display: flex;
     justify-content: center;
@@ -14,8 +15,6 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    /*добавляет прокрутку горизонтальную*/
-    /*padding: 0 23px;*/
     max-width: 1240px;
 }
 
@@ -57,7 +56,7 @@ header li:hover {
 
 .header_search_section img {
     padding: 10px 12px;
-    border: 1px solid grey;
+    border: 1px solid #606060;
 }
 
 .header_search_section input {
@@ -78,7 +77,7 @@ header li:hover {
 }
 
 .active {
-    background-color: darkgrey;
+    background-color: #a3a3a3;
     filter: invert(1);
 }
 
@@ -120,7 +119,7 @@ main h1 {
 main h4 {
     font-size: 24px;
     font-weight: normal;
-    color: rgb(96, 96, 96);
+    color: #606060;
     font-family: Georgia, serif;
     font-style: italic;
     text-align: center;
@@ -128,15 +127,15 @@ main h4 {
 }
 
 .main_info {
-    height: 540px;
     text-align: center;
     padding-top: 145px;
+    margin-bottom: 90px;
 }
 
 .main_info_button button {
     width: 230px;
     height: 58px;
-    border: 1px solid grey;
+    border: 1px solid #a3a3a3;
     background-color: white;
     text-transform: uppercase;
     font-size: 14px;
@@ -199,6 +198,7 @@ h2 {
 .main_email_form {
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 .main_email_form input {
@@ -207,8 +207,8 @@ h2 {
     padding: 10px 20px;
     font-style: italic;
     font-size: 11px;
-    color: grey;
-    border: 1px solid grey;
+    color: #a3a3a3;
+    border: 1px solid #a3a3a3;
 }
 
 .main_email_form button {
@@ -218,7 +218,6 @@ h2 {
     background-color: #f68236;
     border: 1px solid #f68236;
     color: white;
-    margin-bottom: 135px
 }
 
 .main_email_form button:hover {
@@ -292,7 +291,7 @@ footer p {
 
 .page_info {
     font-size: 12px;
-    color: rgb(96, 96, 96);
+    color: #606060;
     text-transform: uppercase;
     margin-bottom: 70px;
 }
@@ -305,7 +304,6 @@ footer p {
     width: 208px;
     height: 257px;
     margin-bottom: 35px;
-    /*border: 1px solid #a3a3a3;*/
 }
 
 .product_section h2 {
@@ -339,19 +337,20 @@ footer p {
     text-align: center;
 }
 
-.slider-text {
+.check_text {
     font-size: 24px;
     font-family: Georgia, serif;
-    color: rgb(96, 96, 96);
+    color: #606060;
     font-style: italic;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 /* ----------- category page end  ------------*/
 
 /* ---------- product-detail start ------------ */
 
-.main_product {
+.main_product_wrapper {
     margin-bottom: 80px;
     margin-right: 20px;
 }
@@ -428,6 +427,7 @@ footer p {
 .main_product_button {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .main_product_button button {
@@ -444,7 +444,7 @@ footer p {
     background-color: #e67429;
 }
 
-.main_product_wrapper {
+.main_product {
     display: flex;
     align-items: flex-end;
     margin-bottom: 70px;
@@ -564,12 +564,7 @@ main {
 .slider_item {
     flex: 0 0 0 50%;
 }
-/*max-width: 50%;
-width: 200px;
-height: 120px;
 
-
- */
 .slider_item img {
     width: 200px;
     height: 120px;
@@ -587,7 +582,6 @@ height: 120px;
     opacity: .8;
     background-color: #e5e5e5;
 }
-
 
 .slider_control:hover,
 .slider_control:focus {
@@ -620,7 +614,3 @@ height: 120px;
 .slider_control_right::before {
     background-image: url("../img/icons/slider_right_arrow.png");
 }
-
-
-
-

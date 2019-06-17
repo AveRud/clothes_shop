@@ -264,7 +264,7 @@
 
     /*shopping bag page end*/
     /*product details page start*/
-    .main_product_wrapper {
+    .main_product {
         margin-bottom: 130px;
     }
 
@@ -281,7 +281,7 @@
     }
 
     .main_product {
-        margin-bottom: 10px;
+        margin-bottom: 50px;
     }
 
     /*product details page end*/
@@ -584,7 +584,7 @@
 
     /*shopping bag page end*/
     /*product details start*/
-    .main_product_wrapper {
+    .main_product {
         margin-bottom: 35%;
     }
 

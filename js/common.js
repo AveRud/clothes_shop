@@ -18,7 +18,7 @@ searchIcon.addEventListener('click', function () {
         window.location.replace("category-all.html");
     }
 });
-//
+
 function redirectToProductDetails() {
     window.location.replace("product-details.html");
 }
@@ -28,7 +28,6 @@ function redirectToCategoryListing() {
 }
 
 // //TODO: change inline function to js code (with contains)
-//
 
 // redirect from divs at category-all page
 let productsList = document.getElementsByClassName('product');
@@ -40,17 +39,15 @@ for (let product of productsList) {
 
 let sliderFunc = (function () {
     let
-        mainElement = document.querySelector('.slider'), // основный элемент блока
-        sliderWrapper = mainElement.querySelector('.slider_wrapper'),
-        sliderItems = mainElement.querySelectorAll('.slider_item'),
-        sliderControls = mainElement.querySelectorAll('.slider_control'),
+        sliderWrapper = document.querySelector('.slider_wrapper'),
+        sliderItems = document.querySelectorAll('.slider_item'),
+        sliderControls = document.querySelectorAll('.slider_control'),
         wrapperWidth = parseFloat(getComputedStyle(sliderWrapper).width),
         itemWidth = parseFloat(getComputedStyle(sliderItems[0]).width),
         positionLeftItem = 0,
         transform = 0,
         step = itemWidth / wrapperWidth * 100,
         items = [];
-    console.log(mainElement);
 
     sliderItems.forEach(function (item, index) {
         items.push({item: item, position: index, transform: 0});
@@ -62,10 +59,14 @@ let sliderFunc = (function () {
     };
 
     let transformItem = function (direction) {
+        if (transform >= position.getMax) {
+            return;
+        }
         if (direction === 'right') {
             if ((positionLeftItem + wrapperWidth / itemWidth - 1) >= position.getMax) {
                 return;
             }
+
             positionLeftItem++;
             transform -= step;
         }
@@ -91,7 +92,6 @@ let sliderFunc = (function () {
         });
     };
 
-
     setUpListeners();
 
     return {
@@ -104,8 +104,23 @@ let sliderFunc = (function () {
     }
 });
 
-
 let slider = sliderFunc('.slider');
+
+let sizes = document.querySelector('.main_product_sizes');
+let sizesButtons = sizes.children;
+console.log(sizesButtons);
+for (let sizeButton of sizesButtons) {
+    // if (sizeButton.style.backgroundColor === '#e5e5e5') {
+    //     sizeButton.onclick = function () {
+    //         alert('heeelloo');
+    //     }
+    // }
+    sizeButton.onclick = function () {
+        sizeButton.style.backgroundColor = '#e5e5e5'
+    }
+}
+
+
 
 
 
